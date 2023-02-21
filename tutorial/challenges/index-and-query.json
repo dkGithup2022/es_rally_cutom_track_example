@@ -1,0 +1,30 @@
+{
+    "name": "index-and-query",
+    "default": true,
+    "schedule": [
+      {
+        "operation": "delete"
+      },
+      {
+        "operation": "create"
+      },
+      {
+        "operation": "wait-for-green"
+      },
+      {
+        "operation": "bulk-index",
+        "warmup-time-period": 120,
+        "clients": 8
+      },
+      {
+        "operation": "force-merge"
+      },
+      {
+        "operation": "query-match-all",
+        "clients": 8,
+        "warmup-iterations": 1000,
+        "iterations": 1000,
+        "target-throughput": 100
+      }
+    ]
+  }

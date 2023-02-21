@@ -1,0 +1,25 @@
+{
+    "version": 2,
+    "description": "Tutorial benchmark for Rally",
+    "indices": [
+      {
+        "name": "geonames",
+        "body": "index.json"
+      }
+    ],
+    "corpora": [
+      {
+        "name": "rally-tutorial-geonames",
+        "documents": [
+          {
+            "source-file": "documents.json",
+            "document-count": 12368263,
+            "uncompressed-bytes": 1640460203
+          }
+        ]
+      }
+    ],
+    "challenges": [
+      {% include "challenges/simple-try.json" %}
+    ]
+  }

@@ -1,0 +1,12 @@
+{
+    "name": "simple-try",
+    "default": true,
+    "schedule": [
+      {
+        "operation": "delete-index"
+      },
+      {
+        "operation": "create-index"
+      }
+    ]
+  }
