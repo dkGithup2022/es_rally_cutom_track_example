@@ -1,0 +1,22 @@
+{
+    "name": "custom-insert",
+    "default": true,
+    "index-settings": {
+        "index.number_of_replicas": 0,
+        "index.number_of_primary": 1
+      },
+    "schedule": [
+      {
+        "operation": "delete-index"
+      },
+      
+      {
+        "operation": "create-index"
+      },
+
+      {% include "operations/bulk-insert-small.json" %},
+
+      {% include "operations/query-single-word.json" %}
+      
+    ]
+  }

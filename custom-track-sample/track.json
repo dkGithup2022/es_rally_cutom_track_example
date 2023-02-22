@@ -1,0 +1,21 @@
+{
+    "version": 2,
+    "description": "Tutorial benchmark for Rally / bulk indexing with dummy word ",
+    "indices": [
+      {
+        "name": "text-index"
+      }
+  
+    ],
+    "corpora": [
+      {
+        "name": "rally-tutorial",
+        "documents": [
+          {% include "corpora.json" %}
+        ]
+      }
+    ],
+    "challenges": [
+      {% include "challenges/custom-insert.json" %}
+    ]
+  }

@@ -2,3 +2,5 @@
 ./tutorial/allCountries.zip
 
 *.zip
+tutorial/__pycache__/
+custom-track-sample/__pycache__/

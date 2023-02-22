@@ -1,0 +1,11 @@
+{
+    "name": "custom-insert-challenge",
+    "default": true,
+    "schedule": [
+ 
+      {
+        "operation": "create-index"
+      },
+      {% include "operations/bulk-insert-small.json" %}
+    ]
+  }

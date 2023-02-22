@@ -1,0 +1,9 @@
+{
+    "name": "bulk-insert-small",
+    "operation": {
+      "operation-type": "bulk",
+      "bulk-size": 50
+    },
+    "warmup-time-period": 120,
+    "clients": 8
+}

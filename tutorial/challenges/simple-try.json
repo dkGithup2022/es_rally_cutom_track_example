@@ -2,11 +2,21 @@
     "name": "simple-try",
     "default": true,
     "schedule": [
-      {
-        "operation": "delete-index"
-      },
+ 
       {
         "operation": "create-index"
+      },
+      {
+        "operation": "bulk-index",
+        "warmup-time-period": 120,
+        "clients": 8
+      },
+      {
+        "name": "index-append",
+        "operation-type": "bulk",
+        "bulk-size": 50
       }
+      
+      
     ]
   }

@@ -9,17 +9,17 @@
     ],
     "corpora": [
       {
-        "name": "rally-tutorial-geonames",
+        "name": "rally-tutorial",
         "documents": [
           {
             "source-file": "documents.json",
-            "document-count": 12368263,
-            "uncompressed-bytes": 1640460203
+            "document-count": 1000,
+            "uncompressed-bytes": 135128
           }
         ]
       }
     ],
     "challenges": [
-      {% include "challenges/simple-try.json" %}
+      {% include "challenges/custom-insert-challenge.json" %}
     ]
   }

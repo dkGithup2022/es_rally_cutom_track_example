@@ -21,8 +21,12 @@ cols = (("geonameid", "int", True),
 
 
 def main():
+    lc = 0
     with open("allCountries.txt", "rt", encoding="UTF-8") as f:
         for line in f:
+            if(lc == 1000):
+                break
+            lc+=1
             tup = line.strip().split("\t")
             record = {}
             for i in range(len(cols)):
