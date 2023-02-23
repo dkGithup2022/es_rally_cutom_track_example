@@ -6,11 +6,12 @@ def init_word():
     if len(wordList) > 100 :
         return
     
-    f = open('./wordList.csv', 'r', encoding='utf-8')
+    f = open('../wordList.csv', 'r', encoding='utf-8')
     rdr = csv.reader(f)
     reader = csv.reader(f,
                         delimiter = ",", quotechar = '"',
                         quoting = csv.QUOTE_ALL)
+    
     for words in reader:
         for word in words:
             wordList.append(word)      
@@ -58,6 +59,6 @@ def query_single_word(track, params, **kwargs):
         "cache": params.get("cache", False)
     }
         
-        
+     
 def register(registry):
     registry.register_param_source("query_single_word-body", query_single_word)

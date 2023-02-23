@@ -9,13 +9,13 @@
     ],
     "corpora": [
       {
-        "name": "rally-tutorial",
+        "name": "text-index-sample-data",
         "documents": [
           {% include "corpora.json" %}
         ]
       }
     ],
     "challenges": [
-      {% include "challenges/custom-insert.json" %}
+      {% include "challenges/drop-and-search-with-conflict.json" %}
     ]
   }

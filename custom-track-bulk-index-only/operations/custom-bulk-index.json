@@ -1,9 +1,9 @@
 {
-    "name": "bulk-insert-small",
+    "name": "custom-bulk-index",
     "operation": {
       "operation-type": "bulk",
       "bulk-size": 50
     },
-    "warmup-time-period": 120,
-    "clients": 8
+    "warmup-time-period": 0,
+    "clients": 1
 }

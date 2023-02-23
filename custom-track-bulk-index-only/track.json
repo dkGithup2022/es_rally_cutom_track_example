@@ -1,0 +1,21 @@
+{
+    "version": 2,
+    "description": "bulk index 커스텀 예시 입니다. ",
+    "indices": [
+      {
+        "name": "text-index"
+      }
+  
+    ],
+    "corpora": [
+      {
+        "name": "rally-tutorial",
+        "documents": [
+          {% include "corpora.json" %}
+        ]
+      }
+    ],
+    "challenges": [
+      {% include "challenges/drop-and-bulk-index.json" %}
+    ]
+  }

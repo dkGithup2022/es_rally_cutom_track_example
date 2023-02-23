@@ -1,0 +1,19 @@
+{
+    "name": "drop-and-bulk-index",
+    "default": true,
+    "index-settings": {
+        "index.number_of_replicas": 0,
+        "index.number_of_primary": 1
+      },
+    "schedule": [
+      {
+        "operation": "delete-index"
+      },
+
+      {
+        "operation": "create-index"
+      },
+
+      {% include "operations/custom-bulk-index.json" %}
+    ]
+  }

@@ -1,7 +1,0 @@
-{
-    "name": "custom-operation1",
-    "operation-type": "search",
-    "param-source": "my-custom-term-param-source",
-    "professions": ["mechanic", "physician", "nurse"]
-  }
-  
