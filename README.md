@@ -4,27 +4,30 @@ es-rally 의 간단한 커스텀 트랙 구성사례 예시 입니다.
 링크 : 
 
 #### bulk-index 커스텀 트랙
-1. /custom-track-bulk-index 경로의 트랙입니다. 
-2. {path}/custom-track-bulk-index/toJSON.py 로 더미 데이터를 생성합니다. 아래의 파일이 만들어집니다.
-- documents.json : 더미 document 데이터
-- corpora.json : 더미 데이터에 대한 메타데이터, track.json 에서 더미 데이터의 갯수와 크기정보를 읽는데 사용됩니다. 
- 
-3. documents.json의 데이터를 읽고 쿼리를 보내면서 throuput, latency, jvm metric 을 가져옵니다.
+ /custom-track-bulk-index 경로의 트랙입니다. 
+
+
+1. {path}/custom-track-bulk-index/toJSON.py 로 더미 데이터를 생성합니다. 아래의 파일이 만들어집니다.
+2. documents.json의 데이터를 읽고 쿼리를 보내면서 throuput, latency, jvm metric 을 가져옵니다.
 3. 아래 커맨드에 따라 실행합니다.
 
 
 #### search 커스텀 트랙
-1. /custom-track-search 경로의 트랙입니다.
-2. track.py 파일이 {path}/wordList.csv  경로의 문자 사전을 읽고 파라미터를 쿼리마다 파라미터를 설정합니다.
-3. 파라미터를 단어사전으로 부터 입력받아 쿼리를 보내면서 throuput, latency, jvm metric 을 가져옵니다.
-4. 아래 커맨드에 따라 실행합니다.
+ /custom-track-search 경로의 트랙입니다.
+
+
+1. track.py 파일이 {path}/wordList.csv  경로의 문자 사전을 읽고 파라미터를 쿼리마다 파라미터를 설정합니다.
+2. 파라미터를 단어사전으로 부터 입력받아 쿼리를 보내면서 throuput, latency, jvm metric 을 가져옵니다.
+3. 아래 커맨드에 따라 실행합니다.
 
 
 #### search with conflict 커스텀 트랙
-1. /custom-track-bulk-index 경로의 트랙입니다.
-2. {path}/custom-track-bulk-index/toJSON.py 로 더미 데이터를 생성합니다.
-3. track.py 파일이 {path}/wordList.csv  경로의 문자 사전을 읽고 파라미터를 쿼리마다 파라미터를 설정합니다.
-4. challenge 의 parallel 옵션으로 읽기 요청을 동시에 보낼 수 있습니다.
+ /custom-track-bulk-index 경로의 트랙입니다.
+
+ 
+1. {path}/custom-track-bulk-index/toJSON.py 로 더미 데이터를 생성합니다.
+2. track.py 파일이 {path}/wordList.csv  경로의 문자 사전을 읽고 파라미터를 쿼리마다 파라미터를 설정합니다.
+3. challenge 의 parallel 옵션으로 읽기 요청을 동시에 보낼 수 있습니다.
 
 ### 실행 하기
 
