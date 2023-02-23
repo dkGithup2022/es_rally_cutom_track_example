@@ -16,8 +16,6 @@ def init_word():
             wordList.append(word)      
     f.close() 
     
-
-    
 def buildTestData():
     doc_oneWord = random.choice(wordList)
     doc_name = random.choice(wordList) + " " +random.choice(wordList)
