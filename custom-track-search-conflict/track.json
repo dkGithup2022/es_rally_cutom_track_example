@@ -3,7 +3,8 @@
     "description": "Tutorial benchmark for Rally / bulk indexing with dummy word ",
     "indices": [
       {
-        "name": "text-index"
+        "name": "text-index",
+        "body":"index.json"
       }
   
     ],

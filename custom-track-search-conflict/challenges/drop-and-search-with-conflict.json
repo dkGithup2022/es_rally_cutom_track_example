@@ -15,8 +15,6 @@
         "operation": "create-index"
       },
 
-      {% include "operations/bulk-insert-small.json" %},
-
       {
         "parallel": {
           "warmup-time-period": 0,

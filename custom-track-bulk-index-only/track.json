@@ -3,9 +3,9 @@
     "description": "bulk index 커스텀 예시 입니다. ",
     "indices": [
       {
-        "name": "text-index"
+        "name": "text-index",
+        "body":"index.json"
       }
-  
     ],
     "corpora": [
       {
