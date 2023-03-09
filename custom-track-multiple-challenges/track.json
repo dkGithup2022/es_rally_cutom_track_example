@@ -1,0 +1,27 @@
+{
+    "version": 2,
+    "description": "커스텀 트랙 예시: search with test param ",
+    "indices": [
+      {
+        "name": "text-index"
+      }
+    ],
+    "challenges": [
+      {
+        "name": "query-single-param-no-conflict",
+        "schedule": [
+          {
+            "name": "query-single-word",
+            "operation":{
+                "operation-type": "search"
+            },
+            "param-source": "query_single_word_body",
+            "clients": 8,
+            "time-period" : 60,
+            "target-throughput" :{{ t_qps|default(500) }}
+        }
+          
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,62 @@
+|                                                         Metric |              Task |         Value |   Unit |
+|---------------------------------------------------------------:|------------------:|--------------:|-------:|
+|                     Cumulative indexing time of primary shards |                   |   0.00783333  |    min |
+|             Min cumulative indexing time across primary shards |                   |   0.00783333  |    min |
+|          Median cumulative indexing time across primary shards |                   |   0.00783333  |    min |
+|             Max cumulative indexing time across primary shards |                   |   0.00783333  |    min |
+|            Cumulative indexing throttle time of primary shards |                   |   0           |    min |
+|    Min cumulative indexing throttle time across primary shards |                   |   0           |    min |
+| Median cumulative indexing throttle time across primary shards |                   |   0           |    min |
+|    Max cumulative indexing throttle time across primary shards |                   |   0           |    min |
+|                        Cumulative merge time of primary shards |                   |   0           |    min |
+|                       Cumulative merge count of primary shards |                   |   0           |        |
+|                Min cumulative merge time across primary shards |                   |   0           |    min |
+|             Median cumulative merge time across primary shards |                   |   0           |    min |
+|                Max cumulative merge time across primary shards |                   |   0           |    min |
+|               Cumulative merge throttle time of primary shards |                   |   0           |    min |
+|       Min cumulative merge throttle time across primary shards |                   |   0           |    min |
+|    Median cumulative merge throttle time across primary shards |                   |   0           |    min |
+|       Max cumulative merge throttle time across primary shards |                   |   0           |    min |
+|                      Cumulative refresh time of primary shards |                   |   0.01105     |    min |
+|                     Cumulative refresh count of primary shards |                   |   7           |        |
+|              Min cumulative refresh time across primary shards |                   |   0.01105     |    min |
+|           Median cumulative refresh time across primary shards |                   |   0.01105     |    min |
+|              Max cumulative refresh time across primary shards |                   |   0.01105     |    min |
+|                        Cumulative flush time of primary shards |                   |   0.00481667  |    min |
+|                       Cumulative flush count of primary shards |                   |   1           |        |
+|                Min cumulative flush time across primary shards |                   |   0.00481667  |    min |
+|             Median cumulative flush time across primary shards |                   |   0.00481667  |    min |
+|                Max cumulative flush time across primary shards |                   |   0.00481667  |    min |
+|                                        Total Young Gen GC time |                   |   0.5         |      s |
+|                                       Total Young Gen GC count |                   |   9           |        |
+|                                          Total Old Gen GC time |                   |   0           |      s |
+|                                         Total Old Gen GC count |                   |   0           |        |
+|                                                     Store size |                   |   0.00321275  |     GB |
+|                                                  Translog size |                   |   5.12227e-08 |     GB |
+|                                         Heap used for segments |                   |   0.00481796  |     MB |
+|                                       Heap used for doc values |                   |   0.000217438 |     MB |
+|                                            Heap used for terms |                   |   0.00274658  |     MB |
+|                                            Heap used for norms |                   |   0.000366211 |     MB |
+|                                           Heap used for points |                   |   0           |     MB |
+|                                    Heap used for stored fields |                   |   0.00148773  |     MB |
+|                                                  Segment count |                   |   3           |        |
+|                                    Total Ingest Pipeline count |                   |   0           |        |
+|                                     Total Ingest Pipeline time |                   |   0           |      s |
+|                                   Total Ingest Pipeline failed |                   |   0           |        |
+|                                                 Min Throughput | query-single-word | 464.12        |  ops/s |
+|                                                Mean Throughput | query-single-word | 497.16        |  ops/s |
+|                                              Median Throughput | query-single-word | 498.78        |  ops/s |
+|                                                 Max Throughput | query-single-word | 499.4         |  ops/s |
+|                                        50th percentile latency | query-single-word |   5.42594     |     ms |
+|                                        90th percentile latency | query-single-word |   8.74992     |     ms |
+|                                        99th percentile latency | query-single-word | 300.417       |     ms |
+|                                      99.9th percentile latency | query-single-word | 418.874       |     ms |
+|                                     99.99th percentile latency | query-single-word | 438.871       |     ms |
+|                                       100th percentile latency | query-single-word | 442.384       |     ms |
+|                                   50th percentile service time | query-single-word |   2.99269     |     ms |
+|                                   90th percentile service time | query-single-word |   5.76295     |     ms |
+|                                   99th percentile service time | query-single-word |  16.6843      |     ms |
+|                                 99.9th percentile service time | query-single-word |  60.425       |     ms |
+|                                99.99th percentile service time | query-single-word | 400.712       |     ms |
+|                                  100th percentile service time | query-single-word | 403.52        |     ms |
+|                                                     error rate | query-single-word |   0           |      % |

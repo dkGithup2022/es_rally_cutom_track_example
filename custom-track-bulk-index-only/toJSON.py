@@ -13,14 +13,17 @@ cols = (("oneWord", "String", True),
         )
 
 def init_word():
-    f = open('../wordList.csv', 'r', encoding='utf-8')
+    f = open('../wordList2.csv', 'r', encoding='utf-8')
     rdr = csv.reader(f)
     reader = csv.reader(f,
                         delimiter = ",", quotechar = '"',
                         quoting = csv.QUOTE_ALL)
     for words in reader:
         for word in words:
-            wordList.append(word)      
+            wordList.append(word)    
+    
+    print( f"initialized length:  {len(wordList)}")  
+    
     f.close() 
     
     
@@ -54,7 +57,9 @@ def writeSnippet():
 def main():
     init_word()
     rows = []
-    for i in range(0,1000):
+    for i in range(0,3000000):
+        if i % 10000 == 0:
+            print(f"300000 of {i}")
         record = {}
         for i in range(len(cols)):
               record["oneWord"] = random.choice(wordList)

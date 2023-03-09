@@ -6,7 +6,19 @@
         "name": "text-index"
       }
     ],
-    "challenges": [
-      {% include "challenges/query-single-param-no-conflict.json" %}
+    "schedule":  [
+        {
+          "operation" : {
+          "name": "query_string",
+          "operation-type": "search",
+          "param-source": "my-custom-term-param-source"
+        },
+         
+          "clients": 5,
+          "target-throughput" : {{ t_qps|default(500) }},
+          "time-period": {{ t_period|default(60) }}
+      }
     ]
-  }
+}
+    
+  

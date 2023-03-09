@@ -7,4 +7,5 @@ custom-track-sample/__pycache__/
 *.offset
 */__pycache__
 
-*/documents.json
+*/documents.json/*
+*.csv
